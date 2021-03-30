@@ -1,0 +1,7 @@
+?player.visible
+	?player.inRange 10
+		?self.outOfAmmo
+			reload
+			attackPlayer
+		pursuePlayer
+	patrol
