@@ -43,15 +43,8 @@ public class KinematicArrive : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        if (showDebugGizmos)
-        {
-            for (int i = 0; i < 10; i++)
-            {
-                float radius = Mathf.Lerp(radiusOfSatisfaction, radiusOfApproach, i / 10f);
-                Color c = Color.Lerp(Color.black, Color.white, i / 10f);
-                GizmoUtils.DrawGizmoCircle(targetPosition, radius, Vector3.up, 32, c);
-            }
-        }
+        Gizmos.color = Color.green;
+        Gizmos.DrawSphere(transform.position, 1);
     }
 
 

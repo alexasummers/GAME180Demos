@@ -109,8 +109,19 @@ public class SteeringCore : MonoBehaviour
         myCharacterController = GetComponent<CharacterController>();
     }
 
+    private bool debugStopRequested = false;
+    public void DebugStop() {
+        debugStopRequested = true;
+    }
+
     void FixedUpdate()
     {
+        if (debugStopRequested) {
+            velocity = Vector3.zero;
+            debugStopRequested = false;
+            return;
+        }
+
         bool isGrounded = IsGrounded();
         if (isGrounded) {
             velocity += linearAcceleration * Time.fixedDeltaTime;
