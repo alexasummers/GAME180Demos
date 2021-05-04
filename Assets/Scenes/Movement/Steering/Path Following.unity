@@ -613,7 +613,6 @@ MonoBehaviour:
   radiusOfSatisfaction: 1
   radiusOfApproach: 8
   showDebugGizmos: 0
-  noSteeringAtTarget: 1
 --- !u!114 &418477553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -660,7 +659,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 180d2a36f1e12f543a4c0cd10212444e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 0}
   faceTarget: {fileID: 1967952511}
 --- !u!114 &418477556
 MonoBehaviour:
@@ -694,7 +692,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 418477559}
   path: {fileID: 1988307201}
-  showDebugGizmos: 1
+  showDebugGizmos: 0
   distanceOffset: 1.2
 --- !u!114 &418477559
 MonoBehaviour:
@@ -720,14 +718,6 @@ MonoBehaviour:
   debugSpeed: 0
   showDebugGizmos: 1
   gizmosScale: 4
-  collisionRadius: 1
-  selfRadius: 0.5
-  groundCheckDistance: 1.01
-  lateralGroundCheckDistance: 0.6
-  jumpPower: 8
-  walkableLayers:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &418477560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -735,7 +725,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 418477547}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0668ea7b0531fce4a85cd93d2b4d7c0b, type: 3}
   m_Name: 
@@ -760,7 +750,6 @@ MonoBehaviour:
   alignDirection: {x: 0, y: 0, z: 0}
   angleOfSatisfaction: 3
   angleOfCloseness: 60
-  noSteeringAtOrientation: 1
 --- !u!114 &418477562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,7 +762,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ca7e7053c5cfa4479316b3f9ddc290d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 0}
 --- !u!1 &475166660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1662,7 +1650,6 @@ MonoBehaviour:
   radiusOfSatisfaction: 1
   radiusOfApproach: 8
   showDebugGizmos: 0
-  noSteeringAtTarget: 1
 --- !u!114 &1967952514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1675,7 +1662,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ca7e7053c5cfa4479316b3f9ddc290d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 0}
 --- !u!114 &1967952515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1692,7 +1678,6 @@ MonoBehaviour:
   alignDirection: {x: 0, y: 0, z: 0}
   angleOfSatisfaction: 3
   angleOfCloseness: 60
-  noSteeringAtOrientation: 1
 --- !u!114 &1967952516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1733,14 +1718,6 @@ MonoBehaviour:
   debugSpeed: 0
   showDebugGizmos: 1
   gizmosScale: 4
-  collisionRadius: 1
-  selfRadius: 0.5
-  groundCheckDistance: 1.01
-  lateralGroundCheckDistance: 0.6
-  jumpPower: 8
-  walkableLayers:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &1967952518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1841,7 +1818,6 @@ MonoBehaviour:
   kinematicTarget: {fileID: 0}
   maxLookAheadSeconds: 10
   showDebugGizmos: 1
-  activationDistance: 10
   debugTimeToTarget: 0
 --- !u!114 &1967952523
 MonoBehaviour:
@@ -1855,7 +1831,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 180d2a36f1e12f543a4c0cd10212444e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 0}
   faceTarget: {fileID: 418477551}
 --- !u!1 &1988307199
 GameObject:
@@ -1882,7 +1857,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1988307199}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.046, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 152919317}
